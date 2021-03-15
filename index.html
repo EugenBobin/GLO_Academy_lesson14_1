@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+<section class="main">
+
+    <div class="inputs">
+        <h1>Введите параметры создаваемого блока</h1>
+        <div>
+            <span class="form-text">Текст для блока: </span>
+            <input class="input-text" type="text" value="lorem ipsum">
+        </div>
+        <div>
+        <span class="form-type">Идентификатор (начните с . или #): </span>
+        <input class="input-ident" type="text" value="">        
+<!--        <input class="input-class-type" type="radio" value="." id="class" name="class-select" checked><label for="class">class</label>
+        <input class="input-id-type" type="radio" value="#" id="id" name="class-select"><label for="id">id</label> -->
+<!-- <input class="daychecks" onclick="checkOnlyOne(this.value);" type="checkbox" name="reoccur_weekday" value="Wednesday" />Wed&nbsp;&nbsp;&nbsp;-->        
+        </div>
+        <div>
+            <span class="form-height">Высота блока: </span>
+            <input class="input-height" type="text" value="30"><span>px</span>         
+        </div>
+        <div>
+            <span class="form-width">ширина блока: </span>
+            <input class="input-width" type="text" value="300"><span>px</span>
+        </div>
+        <div>
+            <span class="form-font-size">размер шрифта: </span>
+            <input class="input-font-size" type="text" value="16"><span>px</span>
+        </div>        
+        <div>
+            <span class="form-color">цвет фона: </span>
+            <input class="input-color" type="color" value="#ffffff">         
+        </div>
+        <div class="buttons">
+            <input class="create-btn push_button blue" type="button" value="Create">
+            <input class="clear-btn push_button blue" type="button" value="Clear">
+        </div>
+    </div>
+    <div class="created-elements">
+        
+
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
