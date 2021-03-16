@@ -9,8 +9,6 @@ const DomElement = {
   bg: '', 
   fontSize: '',
 
-//newText, newIdent, newHeight, newWidth, newBg, newFontSize
-
   createElem: function() {
     const newDiv = document.createElement('div');
     newDiv.innerHTML = this.text;
@@ -28,9 +26,8 @@ const DomElement = {
     return newDiv;
   }
 
-
 };
-
+// привязываем элементы страницы
 const createBtn = document.querySelector('.create-btn'),
       clearBtn = document.querySelector('.clear-btn'),
       createdElems = document.querySelector('.created-elements'),
@@ -65,7 +62,17 @@ createBtn.addEventListener('click',() => {
   newDomElem.bg = formBackground.value;
 
   const newDiv = newDomElem.createElem();
-  
   createdElems.append(newDiv);
+});
 
+// удаляем все блоки div и очищаем поля ввода при нажатии кнопки Clear
+clearBtn.addEventListener('click',() => {
+  formText.value = 'lorem ipsum';
+  formIdent.value = '';
+  formHeight.value = 30;
+  formWidth.value = 300;
+  formFontSize.value = 16;
+  formBackground.value = '#ffffff';
+
+  createdElems.innerHTML = '';
 });
